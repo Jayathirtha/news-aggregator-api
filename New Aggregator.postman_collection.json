@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "63840ef3-c38a-4da2-91f2-43a931ea8fef",
+		"name": "New Aggregator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30035593"
+	},
+	"item": [
+		{
+			"name": "register User Step 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"jay\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login Step 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"jay\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "preferences Step 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXkiLCJpYXQiOjE3NTUxMDYyODUsImV4cCI6MTc1NTE0MjI4NX0.-XTqhkOFBBcoDwi6tYbO0KvcPbMZQeYLjNCLH9-fpfySbAvRtCOGCKsZ4dINIjtLSJ-1vJ2cMFukAnJLsgR0Ow",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/preferences",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"preferences"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
